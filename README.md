@@ -13,11 +13,13 @@ _This is a anagram tester. On the main page the user can input 2 strings of text
 
 * _Clone directory from github using git_
 * _Navigate into downloaded directory file using a terminal or your operating systems GUI finder_
-* _Open index.html file using a web browser_
+* _Download and install Ruby and the Sinatra Gem_
+* _Navigate directory and open usin ruby app.rb_
+* _Using a web browser, type in the url localhost:4567_
 
 ## Known Bugs
 
-_No known bugs at this time. However, if you enter a very large number. Please allow a few moments for your CPU to calculate._
+_No known bugs at this time._
 
 ## Support details
 
