@@ -6,25 +6,20 @@ class String
     word2 = (word_array[1]).to_s.split("")
 
     palindrone_outcome = ""
-
-    if (word1.join("") == word2.join("").reverse())
-      palindrone_outcome = "a Palindrome"
-    elsif (word1.join("") != word2.join("").reverse())
-      palindrone_outcome = "Not a Palindrome"
-    end
-
-
     anagram_outcome = ""
 
-    word1.sort!()
-    word2.sort!()
+    sorted_word1 = word1.sort()
+    sorted_word2 = word2.sort()
 
-    if (word1.join("") == word2.join(""))
+    if (sorted_word1.join("") == sorted_word2.join(""))
       anagram_outcome = "an Anagram"
-    elsif (word1.join("") != word2.join(""))
+      if (word1.join("") == word2.join("").reverse())
+        palindrone_outcome = " This is also a Palindrome."
+      end
+    elsif (sorted_word1.join("") != sorted_word2.join(""))
       anagram_outcome = "Not an Anagram"
     end
 
-  "This is #{palindrone_outcome}. This is #{anagram_outcome}"
+  "This is #{anagram_outcome}.#{palindrone_outcome}"
   end
 end
