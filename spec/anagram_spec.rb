@@ -46,5 +46,10 @@ describe('String#anagram') do
     expect("four three two one,one two three four".anagram()).to(eq("This is an Anagram."))
   end
 
+  it('tests to see if the user inputted words are both actual words with vowels') do
+    expect("tst,tst".anagram()).to(eq("This is not a word. Please input a word."))
+  end
+
+
 
 end
