@@ -1,7 +1,6 @@
 class String
   define_method(:anagram)  do
-    downcase_words = self.downcase
-    word_array = downcase_words.split(",")
+    word_array = self.downcase().split(",")
     word1 = (word_array[0]).split("")
     word2 = (word_array[1]).split("")
 
@@ -10,7 +9,7 @@ class String
 
     word_test = word1.join("") + word2.join("")
     if (word1 & word2).empty?
-      alert_output = "Not an Anagram. It is actually an Antigram"
+      anagram_outcome = "Not an Anagram. It is actually an Antigram"
     else
       if word_test.scan(/[aeiou]/).count > 0
         if (sorted_word1.join("") == sorted_word2.join(""))
@@ -22,9 +21,9 @@ class String
           anagram_outcome = "Not an Anagram."
         end
       else
-        alert_output = "not a word. Please input a word."
+        anagram_outcome = "not a word. Please input a word."
       end
     end
-  "This is #{alert_output}#{anagram_outcome}#{palindrone_outcome}"
+  "This is #{anagram_outcome}#{palindrone_outcome}"
   end
 end
