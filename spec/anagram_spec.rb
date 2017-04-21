@@ -42,4 +42,9 @@ describe('String#anagram') do
     expect("lab testing,test labing".anagram()).to(eq("This is an Anagram."))
   end
 
+  it('tests to see if the user input or multiple words is an Anagram and a Palandrome') do
+    expect("four three two one,one two three four".anagram()).to(eq("This is an Anagram."))
+  end
+
+
 end
