@@ -24,6 +24,6 @@ class String
         anagram_outcome = "not a word. Please input a word."
       end
     end
-  "This is #{anagram_outcome}#{palindrone_outcome}"
+    "This is #{anagram_outcome}#{palindrone_outcome}"
   end
 end
