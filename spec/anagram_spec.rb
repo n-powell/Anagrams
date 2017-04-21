@@ -50,6 +50,10 @@ describe('String#anagram') do
     expect("tst,tst".anagram()).to(eq("This is not a word. Please input a word."))
   end
 
+  it('tests to see if the user inputted words are antigrams') do
+    expect("hi,bye".anagram()).to(eq("This is Not an Anagram. This is an Antigram."))
+  end
+
 
 
 end

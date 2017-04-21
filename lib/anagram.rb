@@ -1,7 +1,7 @@
 class String
   define_method(:anagram)  do
     downcase_words = self.downcase
-    word_array = downcase_words.split(",").to_a
+    word_array = downcase_words.split(",")
     word1 = (word_array[0]).split("")
     word2 = (word_array[1]).split("")
 
@@ -9,7 +9,6 @@ class String
     sorted_word2 = word2.sort()
 
     word_test = word1.join("") + word2.join("")
-
 
     if word_test.scan(/[aeiou]/).count > 0
       if (sorted_word1.join("") == sorted_word2.join(""))
