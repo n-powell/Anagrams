@@ -1,6 +1,4 @@
 class String
-
-
   define_method(:anagram)  do
     word_array = self.split(",").to_a
     word1 = (word_array[0]).to_s.split("")
@@ -21,6 +19,6 @@ class String
       anagram_outcome = "Not an Anagram"
     end
 
-    anagram_outcome
+  anagram_outcome
   end
 end
