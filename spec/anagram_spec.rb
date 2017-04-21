@@ -18,7 +18,15 @@ describe('String#anagram') do
     expect("setter,tester".anagram()).to(eq("Anagram"))
   end
 
-    it('tests to see if the user input is an anagram, regardless of Uppercase letters') do
-      expect("Setter,Tester".anagram()).to(eq("Anagram"))
-    end
+  it('tests to see if the user input is an anagram, regardless of Uppercase letters') do
+    expect("Setter,Tester".anagram()).to(eq("Anagram"))
+  end
+
+  it('tests to see if the user input is an anagram, regardless of Uppercase letters') do
+    expect("SetTer,TeSter".anagram()).to(eq("Anagram"))
+  end
+
+  it('tests to see if the user input is an anagram, regardless of Uppercase letters') do
+    expect("TAP,Pat".anagram()).to(eq("Anagram"))
+  end
 end
