@@ -1,7 +1,7 @@
 class String
   define_method(:anagram)  do
-    self.downcase!
-    word_array = self.split(",").to_a
+    downcase_words = self.downcase
+    word_array = downcase_words.split(",").to_a
     word1 = (word_array[0]).to_s.split("")
     word2 = (word_array[1]).to_s.split("")
 
@@ -10,9 +10,6 @@ class String
 
     word1.sort!()
     word2.sort!()
-
-    @word1 = word1.join("")
-    @word2 = word2.join("")
 
     if (word1.join("") == word2.join(""))
       anagram_outcome = "Anagram"

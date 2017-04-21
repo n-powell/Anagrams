@@ -29,4 +29,8 @@ describe('String#anagram') do
   it('tests to see if the user input is an anagram, regardless of Uppercase letters') do
     expect("TAP,Pat".anagram()).to(eq("Anagram"))
   end
+
+  it('tests to see if the user input is a Palandrome') do
+    expect("test,tset".anagram()).to(eq("Palandrome"))
+  end
 end
