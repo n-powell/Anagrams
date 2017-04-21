@@ -4,7 +4,10 @@ class String
     word1 = (word_array[0]).to_s.split("")
     word2 = (word_array[1]).to_s.split("")
 
+    word1.sort!()
+    word2.sort!()
+
     print word1
     print word2
-    end
+  end
 end
